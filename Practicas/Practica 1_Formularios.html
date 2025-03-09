@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--Desarrollado por: López Rocha Jocelin 187149
+Fecha: 04/03/2025-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="imagenes/upslp.png">
+	<title>Practica 1-Formularios</title>
+	<style type="text/css">
+		header
+		{
+			background-color: #d11d1d;/* Color de encabezado */
+			
+		}
+		header img {
+      max-width: 200px; /* Tamaño de la imagen */
+      height: auto; /* Mantener la proporción */
+    }
+		div{/* estilo de la etiqueta div */
+		width: 75%;
+		margin: auto;
+		background-color: #2f56da;
+		color: lightgrey;
+	}
+	/* estilos de las etiquetas input */
+	input[type=text]{
+		width: 100%;
+		padding: 8px;
+		box-sizing: border-box;
+		border: 2px solid lightgray;
+		border-radius: 10px;
+		margin: 5px;
+		line-height: 12px;
+	}
+	input[type=password]{
+		width: 100%;
+		padding: 8px;
+		box-sizing: border-box;
+		border: 2px solid lightgray;
+		border-radius: 10px;
+		margin: 5px;
+		line-height: 12px;
+	}
+	input[type=submit]{
+		width: 100%;
+		padding: 15px;
+		text-align: center;
+		border-radius: 10px;
+		font-size: 16px;
+	}
+	input[type=reset]{
+		width: 100%;
+		padding: 15px;
+		text-align: center;
+		border-radius: 10px;
+		font-size: 16px;
+	}
+	input[type=email]{
+		width: 100%;
+		padding: 8px;
+		box-sizing: border-box;
+		border: 2px solid lightgray;
+		border-radius: 10px;
+		margin: 5px;
+		line-height: 12px;
+	}
+	input[type=number]{
+		width: 100%;
+		padding: 8px;
+		box-sizing: border-box;
+		border: 2px solid lightgray;
+		border-radius: 10px;
+		margin: 5px;
+		line-height: 12px;
+	}
+	input[type=date]{
+		width: 100%;
+		padding: 8px;
+		box-sizing: border-box;
+		border: 2px solid lightgray;
+		border-radius: 10px;
+		margin: 5px;
+		line-height: 12px;
+	}
+	</style>
+</head>
+<body style="background: #FFFDD0;">
+	<header> <img src="imagenes/farmacia.webp"> </header><!--Icono de la farmacias-->
+</br>
+<h1 style="font-family: Bahnschrift;">Registro para la tienda en linea</h1>
+	<div>
+		<form action="" method="post" enctype="text/plain"><!--Etiqueta de formularios-->
+			<fieldset>	<!--Etiqueta que encierra los objetos del formulario-->
+				<fieldset><!--Primera parte del formulario-->
+					<legend>Datos de la cuenta</legend>
+				<table><!--Tabla para acomodar el formulario-->
+					<tbody>
+							<tr>
+								<td> 
+									<label for="usuario">Usuario: </label>
+									<input type="text" name="usuario" placeholder="Usuario">
+								</td>
+								<td> 
+									<label for="correo">Correo electronico: </label>
+									<input type="email" name="correo" placeholder="E-mail">
+								</td>
+								<td>
+									<label for="contraseña">Contraseña: </label>
+									<input type="password" name="contraseña" placeholder="Contraseña" >
+								</td>
+								<td> 
+									<label for="fechaR">Fecha de registro: </label>
+									<input type="date" name="fechaR">
+								</td>
+							</tr>
+					</tbody>
+				</table>
+				</fieldset>
+				<fieldset><!--segunda parte del formulario-->
+					<legend>Datos del usuario</legend>
+				<table>
+					<tbody>
+							<tr>
+								<td> 
+									<label for="nombre">Nombre: </label>
+									<input type="text" name="nombre" placeholder="Nombre">
+								</td>
+								<td> 
+									<label for="apellidoP">Apellido paterno: </label>
+									<input type="text" name="apellidoP" placeholder="Apellido">
+								</td>
+								<td>
+									<label for="apellidoM">Apellido materno: </label>
+									<input type="text" name="apellidoM" placeholder="Apellido">
+								</td>
+								<td> 
+									<label for="rfc">Ingrese RFC: </label>
+									<input type="text" name="rfc" placeholder="RFC">
+								</td>
+							</tr>
+					</tbody>
+				</table>
+				</fieldset>
+				<fieldset><!--tercera parte del formulario-->
+					<legend>Datos del domicilio</legend>
+				<table>
+					<tbody>
+							<tr>
+								<td> 
+									<label for="calle">Calle: </label>
+									<input type="text" name="calle" placeholder="Calle">
+								</td>
+								<td> 
+									<label for="colonia">Colonia: </label>
+									<input type="text" name="colonia" placeholder="Colonia">
+								</td>
+								<td>
+									<label for="dom">Número de domicilio: </label>
+									<input type="number" name="dom" placeholder="#">
+								</td>
+							</tr>
+					</tbody>
+				</table>
+				</fieldset>
+				<table>
+					<tbody>
+						<tr>
+							<td>
+							</br>
+								<input type="submit" name="enviar" id="enviar" value="Registrar"><!--Boton de envio-->
+							</td>
+							<td>
+								</br>
+								<input type="reset" name="reseteo" id="reseteo" value="Reset"><!--Boton de reseteo-->
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</fieldset>	
+		</form>	
+	</div>
+</body><!--final del cuerpo del html-->
+<footer>
+</br>
+	<h5 style="text-align: right;">Abril,2025</h5>
+</footer>
+</html>
