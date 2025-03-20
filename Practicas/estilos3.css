@@ -1,0 +1,37 @@
+.capa1{ 
+	margin-left: 25%;
+	padding: 12px;
+}
+ul{
+	list-style-type: none;
+	width: 20%;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	background-color:  lightpink;
+	position: fixed;
+}
+li a{
+	background-color: lightpink;
+	color: darkgoldenrod;
+	display: block;
+	padding: 16px;
+	text-decoration: none;
+}
+li a:hover{
+	background-color: hotpink;
+	color: white;
+}
+li .activo{
+	background-color: palegoldenrod;
+	color: palevioletred;
+}
+h1{
+	font-family: "Big Shoulders", sans-serif;
+}
+h2{
+	font-family: "Playwrite HU", cursive;
+}
+h3{
+	 font-family: "Pangolin", cursive;
+}
