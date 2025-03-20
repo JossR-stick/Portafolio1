@@ -1,0 +1,86 @@
+/*Desarrollado por: 
+López Rocha Jocelin 187149
+Ruiz Araiza Carlos Hernán 187038
+Fecha: 19/03/2025-->*/       
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            text-align: center;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 20px;
+        }
+        
+        .redes a {
+            margin-right: 10px;
+        }
+        
+        .ordenar {
+            background-color: #88cc44;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        
+        .ordenar a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        
+        .contenedor {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px;
+        }
+        
+        .logo {
+            width: 50%;
+            text-align: left;
+            padding: 20px;
+        }
+        
+        .logo img {
+            width: 100%;
+        }
+        
+        .imagen {
+            width: 50%;
+        }
+        
+        .imagen img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        footer {
+            background-color: #88cc44;
+            padding: 20px;
+        }
+        
+        .menu-container {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        
+        .menu-item {
+            text-align: center;
+            width: 150px;
+        }
+        
+        .menu-item img {
+            width: 100%;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+        p{
+            font-family: cursive;
+        }
