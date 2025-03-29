@@ -1,0 +1,71 @@
+body{
+    background-color: #fdf9c4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/* Contenedor principal */
+.container {
+    display: flex; /*organizar los elementos como flexbox*/
+    flex-direction: column;
+    min-height: 100vh; /*viewport height (altura del dispositivo) Asegura que la altura total cubra la ventana 100vh=100% de la ventana*/
+}
+
+/* Estilo para el encabezado */
+.encabezado {
+    background-color: #e79eff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Sección central */
+.centro {
+    display: flex;
+    justify-content: space-between;
+    flex: 1; /* Toma el espacio restante */
+    padding: 20px;
+}
+
+/* Estilo de los contenedores centrales */
+.caja {
+    flex: 1; /*Repartir el espacio sobrante entre todos los dispositivos*/
+    margin: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.1);/*desplazamiento en x, desplazamiento en y, color rgba: rojo, verde, azul, opacidad de 0 a 1*/
+    border-radius: 10px;
+    font-family: "Bytesized", sans-serif;
+}
+
+/* Pie de página */
+.pie {
+    background-color: #FFD1DC;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .centro {
+        flex-direction: column;
+    }
+
+    .caja {
+        margin-bottom: 10px;
+    }
+}
+h1{
+    font-family: "Fredericka the Great", serif;
+}
+p{
+    font-family: "Bytesized", sans-serif;
+    color: #9b9b9b;
+}
