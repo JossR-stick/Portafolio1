@@ -1,0 +1,66 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Primer div: Unidades absolutas */
+        .absolutas {
+            width: 50%; /* Usa el 50% del ancho de la pantalla */
+            background-color: lightblue;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .absolutas h2 {
+            font-size: 2rem;
+            font-family: "Codystar", sans-serif;
+        }
+
+        .absolutas img {
+            width: 300px; /* Medida absoluta en píxeles */
+            height: 200px;
+            margin-top: 20px;
+        }
+
+        .absolutas p {
+            font-size: 14px; /* Tamaño de fuente absoluto en píxeles */
+            line-height: 1.6;
+            font-family: "Delius", cursive;
+        }
+
+        /* Segundo div: Unidades relativas */
+        .relativas {
+            width: 50%; /* Usa el 50% del ancho de la pantalla */
+            background-color: lightpink;
+            padding: 2rem;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .relativas h2 {
+            font-size: 2.5rem; /* Usa unidades relativas */
+            font-family: "Wallpoet", sans-serif;
+        }
+
+        .relativas img {
+            width: 100%; /* Usa un 100% del ancho del contenedor */
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .relativas p {
+            font-size: 1rem; /* Usa rem, relativo al tamaño de fuente base */
+            line-height: 1.6;
+            font-family: "Delius", cursive;
+        }
+
+        /* Ajuste para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .absolutas, .relativas {
+                width: 100%;
+            }
+        }
