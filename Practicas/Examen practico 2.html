@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="examen.css">
+	<link rel="icon" type="image/png" href="imagenes/upslp.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<title>Examen práctico Parcial 2</title>
+</head>
+<body>
+	<h1>Examen práctico Parcial 2</h1>
+	<h2>Nombre del alumno(a): López Rocha Jocelin</h2>
+	<br>
+	<input type="button" class="mostrar" id="mostrar" value="Galeria de imagenes">
+	<label for="mostrar"></label>
+		<div class="galeria" id="galeria">
+			<div class="imagen">
+				<img src="imagenes/postre1.webp" alt="Paisaje 1">
+			</div>
+			<div class="imagen">
+				<img src="imagenes/postre2.webp" alt="Paisaje 2">
+			</div>
+			<div class="imagen">
+			<img src="imagenes/postre3.webp" alt="Paisaje 3">
+				</div>
+			<div class="imagen">
+				<img src="imagenes/postre4.webp" alt="Paisaje 4">
+			</div>
+		</div>
+		<script>
+        const boton = document.getElementById('mostrar');
+        const galeria = document.getElementById('galeria');
+
+        boton.addEventListener('mouseenter', function() {
+            galeria.style.display = 'none'; 
+            mostrar.style.background= "#AFEEEE";
+            mostrar.style.color= "black";
+        });
+        boton.addEventListener('mouseleave', function() {
+            galeria.style.display = 'flex';
+            mostrar.style.background= "#FFB7C5";
+            mostrar.style.color= "gray";
+        });
+    </script>
+</body>
+</html>
