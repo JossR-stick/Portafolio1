@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="imagenes/upslp.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Operaciones con JavaScript</title>
+	<link rel="stylesheet"  type="text/css" href="operacionesjs.css">
+	<script type="text/JavaScript">
+		function sumar(){
+			var n1=document.getElementById("num1").value;
+			var n2=document.getElementById("num2").value;
+			var r=parseInt(n1)+parseInt(n2);
+			document.getElementById("resultado").innerHTML=r;
+		}
+        function restar(){
+			var n1=document.getElementById("num1").value;
+			var n2=document.getElementById("num2").value;
+			var r=parseInt(n1)-parseInt(n2);
+			document.getElementById("resultado").innerHTML=r;
+		}
+        function multi(){
+			var n1=document.getElementById("num1").value;
+			var n2=document.getElementById("num2").value;
+			var r=parseInt(n1)*parseInt(n2);
+			document.getElementById("resultado").innerHTML=r;
+		}
+        function division(){
+			var n1=document.getElementById("num1").value;
+			var n2=document.getElementById("num2").value;
+			var r=parseInt(n1)/parseInt(n2);
+			document.getElementById("resultado").innerHTML=r;
+		}
+
+	</script>
+<body style="text-align: center; background-color: lightpink;">
+	<h1>Calculadora</h1>
+	<form>
+		<label for="num1">Numero: </label>
+		<input type="text" name="num1" id="num1" placeholder="Numero 1">
+		<br>
+		<label for="num2">Numero: </label>
+		<input type="text" name="num2" id="num2" placeholder="Numero 2">
+		<br>
+		<input type="button" name="suma" id="suma" value="Suma" onclick="sumar()">
+		<input type="button" name="resta" id="resta" value="Resta" onclick="restar()">
+		<input type="button" name="multiplica" id="multiplica" value="Multiplica" onclick="multi()">
+		<input type="button" name="divide" id="divide" value="division" onclick="division()">
+		<br><br>El resultado es:
+		<p id="resultado" name="resultado"></p> 
+	</form>
+</body>
+</html>
