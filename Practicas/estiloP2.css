@@ -1,0 +1,248 @@
+/* Eliminar márgenes y padding predeterminados */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Barra de navegación */
+.barra {
+    background-color: #333;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.barra ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los enlaces */
+    background-color: #333;
+}
+
+.barra ul li {
+    margin: 0 20px; /* Espaciado entre los enlaces */
+}
+
+.barra ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    text-align: center;
+    font-family: "Delius", cursive;
+}
+
+.barra ul li a:hover {
+    background-color: #fdcae1;
+    color: #9b9b9b;
+    font-weight: bold;
+}
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D3D3D3;
+    padding: 10px;
+    position: relative;
+}
+
+/* Cuerpo de la página */
+.cuerpo {
+    padding: 20px;
+    background-color: #fff5e1;
+    margin-top: 60px; /* Evita que el contenido quede oculto debajo de la barra */
+    border: 5px solid;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+/* Opiniones de clientes */
+.opinion-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.opinion-box {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+.opinion-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    max-width: 90%;
+}
+
+.opinion-box:hover .image {
+    opacity: 50%;
+}
+
+.opinion-box:hover .opinion-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: "Fredericka the Great", serif;
+}
+
+p.frase {
+    font-family: "Rochester", cursive;
+    font-size: 25px;
+}
+
+p.texto {
+    font-family: "Delius", cursive;
+    font-size: 15px;
+}
+
+/* Fondo del cuerpo */
+body {
+    background-image: url('imagenes/fondo.webp');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+.vinculo{
+    text-decoration: none;
+    color: black;
+}
+.pie {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 25px;
+}
+li{
+    font-family: "Delius", cursive;
+    font-size: 15px;
+}
+h2
+{
+    font-family: "Rochester", cursive;
+    font-size: 25px;
+}
+h3
+{
+    font-family: "Rochester", cursive;
+    font-size: 20px;
+}
+.productos
+{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .productos {
+        flex: 1 1 calc(33.33% - 20px); /* 3 por fila en pantallas medianas */
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .productos {
+        flex: 1 1 calc(50% - 20px); /* 2 por fila en pantallas pequeñas */
+        max-width: calc(50% - 20px);
+    }
+}
+.frame {
+    clear: both;
+    margin-top: 20px; /* Añadir espacio arriba del iframe */
+   
+}
+/* Estilos para la sección de Preguntas Frecuentes */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+
+.faq-question {
+    color: #8B4513; /* Color marrón para combinar con la temática de panadería */
+    font-family: "Delius", cursive;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #A0522D; /* Marrón más oscuro al pasar el mouse */
+}
+
+.faq-answer {
+    font-family: "Delius", cursive;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+    padding-left: 15px;
+}
+
+/* Efecto de acordeón para móviles */
+@media (max-width: 768px) {
+    .faq-answer {
+        display: none;
+    }
+    
+    .faq-question::after {
+        content: "+";
+        float: right;
+    }
+    
+    .faq-item.active .faq-question::after {
+        content: "-";
+    }
+    
+    .faq-item.active .faq-answer {
+        display: block;
+    }
+}
