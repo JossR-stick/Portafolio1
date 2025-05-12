@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="cuestionario.css">
+	<script src="cuestionario.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+	<title>Practica 3 Parcial 3</title>
+</head>
+<body>
+	<div id="tit"><h1>Cuestionario de peliculas</h1></div>
+	<br><br><br>
+	<fieldset name="form">
+		<form name="cuestionario">
+		<div id="contenedor-flex">
+			<div id="preg">
+			<h3>1.-¿De que color era el chaleco de Shrek?(2 pts)</h3>
+			<input type="radio" name="p1" value="0">
+				<label for="p1">A) Negro</label><br>
+			<input type="radio" name="p1" value="2">
+				<label for="p1">B) Café</label><br>
+			<input type="radio" name="p1" value="0">
+				<label for="p1">C) Azul</label><br>
+			<input type="radio" name="p1" value="0">
+				<label for="p1">D) Beige</label>
+
+			<h3>2.-¿Porqué se distanciarón Simbad y Proteo?(2 pts)</h3>
+			<input type="radio" name="p2" value="2">
+				<label for="p2">A) Por Marina</label><br>
+			<input type="radio" name="p2" value="0">
+				<label for="p2">B) Por que se amaban</label><br>
+			<input type="radio" name="p2" value="0">
+				<label for="p2">C) Por el libro</label><br>
+			<input type="radio" name="p2" value="0">
+				<label for="p2">D) Por culpa de Eris</label><br>
+
+			<h3>3.-¿Qué condición tenia Baby de "Baby driver?"(2 pts)</h3>
+			<input type="radio" name="p3" value="0">
+				<label for="p3">A) Sinusitis</label><br>
+			<input type="radio" name="p3" value="0">
+				<label for="p3">B) Ceguera</label><br>
+			<input type="radio" name="p3" value="0">
+				<label for="p3">C) Sordez</label><br>
+			<input type="radio" name="p3" value="2">
+				<label for="p3">D) Tinitus</label><br>
+
+			<h3>4.-¿Cual de estos NO era un horocrux?(2 pts)</h3>
+			<input type="radio" name="p4" value="2">
+				<label for="p4">A) Varita de sauco</label><br>
+			<input type="radio" name="p4" value="0">
+				<label for="p4">B) Harry</label><br>
+			<input type="radio" name="p4" value="0">
+				<label for="p4">C) Diario</label><br>
+			<input type="radio" name="p4" value="0">
+				<label for="p4">D) Diadema</label><br>
+
+			<h3>5.-¿Cuál era el nombre de la madre de Simba?(2 pts)</h3>
+			<input type="radio" name="p5" value="0">
+				<label for="p5">A) Kiara</label><br>
+			<input type="radio" name="p5" value="0">
+				<label for="p5">5) Nala</label><br>
+			<input type="radio" name="p5" value="2">
+				<label for="p5">C) Sarabi</label><br>
+			<input type="radio" name="p5" value="0">
+				<label for="p5">D) Zira</label><br>
+			<br>
+			<button type="button" onclick="calcularPuntaje()">Enviar respuestas</button>
+			<p id="resultado"></p>
+			</div>
+			<br>
+			<div id="fofo">
+				<canvas id="grafica" width="400" height="200"></canvas>
+				<br><br><br><br>
+				<input type="button" onclick="generar()" value="Generar PDF">
+				<br><br>
+    			<iframe src="" width="300" height="250"></iframe>
+  			</div>
+		</div>
+		</form>
+	</fieldset>
+</body>
+</html>
